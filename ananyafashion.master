@@ -1,0 +1,533 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ananyafashion.master.cs" Inherits="ananyafashion" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/chosen.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dreaming-attribute.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Ananya Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Roboto, Sans-serif !important;
+        }
+        em {
+            font-style: normal;
+        }
+
+        #wappLink {
+            width: auto;
+            height: 40px;
+            font-size: 17px;
+            background-color: #25d366;
+            position: fixed;
+            bottom: 65px;
+            left: 25px;
+            text-align: center;
+            transition: all 0.4s ease 0s;
+            z-index: 999;
+            overflow: hidden;
+            border-radius: 50px;
+            white-space: nowrap;
+            padding: 12px 24px;
+            display:flex;
+            align-items:center;
+        }
+
+            #wappLink span, #wappLink fa {
+                color: white;
+            }
+
+        .modal-body h1 {
+            font-weight: 900;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .modal-body a.pre-order-btn {
+            color: #000;
+            background-color: gold;
+            border-radius: 1em;
+            padding: 1em;
+            display: block;
+            margin: 2em auto;
+            width: 50%;
+            font-size: 1.25em;
+            font-weight: 6600;
+        }
+
+            .modal-body a.pre-order-btn:hover {
+                background-color: #000;
+                text-decoration: none;
+                color: gold;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header id="header" class="header style-04 header-dark">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top-inner">
+                        <ul id="menu-top-left-menu" class="akasha-nav top-bar-menu">
+                            <li id="menu-item-865"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-865"><a
+                                    class="akasha-menu-item-title" title="address"
+                                    href="https://www.google.com/maps/place/ANANYA+FASHION/@26.915955,75.8203419,17z/data=!4m10!1m2!2m1!1sshop+no.323%2F324+-+4th+floor++navjeevan+plaza+mi+road+jaipur!3m6!1s0x396db78455a8ba81:0x2b1c46fc6a49214e!8m2!3d26.9159005!4d75.8229807!15sCjtzaG9wIG5vLjMyMy8zMjQgLSA0dGggZmxvb3IgIG5hdmplZXZhbiBwbGF6YSBtaSByb2FkIGphaXB1clo6IjhzaG9wIG5vIDMyMyAzMjQgNHRoIGZsb29yIG5hdmplZXZhbiBwbGF6YSBtaSByb2FkIGphaXB1cpIBGWZhc2hpb25fYWNjZXNzb3JpZXNfc3RvcmXgAQA!16s%2Fg%2F11jt05fn6r">
+                                    <span class="icon flaticon-box"></span>
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="color: #e99c2e;"></i>&nbsp 
+                                    <%=address %></a></li>
+                        </ul>
+                        <div class="akasha-nav top-bar-menu right">
+                            <ul class="wpml-menu">
+                                <li id="menu-item-864"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-864">
+                                    <a class="akasha-menu-item-title" title="mobileNumber"
+                                        href="tel:8619000812"><span class="icon flaticon-localization"></span>
+                                        <i class="fa fa-phone" aria-hidden="true" style="color: #e99c2e;"></i>&nbsp <%=mobileNumber %></a></li>
+
+                                <li id="menu-item-866"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-864">
+                                    <a class="akasha-menu-item-title" title="emailId"
+                                        href="tel:8619000812"><span class="icon flaticon-localization"></span>
+                                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: #e99c2e;"></i>&nbsp <%=emailId %></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle-inner">
+                        <div class="header-logo-menu">
+                            <div class="block-menu-bar">
+                                <a class="menu-bar menu-toggle" href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="header-logo">
+                                <a href="index.aspx"><%=logoImage %></a>
+                            </div>
+                        </div>
+                        <div class="header-search-mid">
+                            <div class="header-search">
+                                <div class="block-search">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-stick">
+                <div class="header-position">
+                    <div class="header-nav">
+                        <div class="container">
+                            <div class="akasha-menu-wapper"></div>
+                            <div class="header-nav-inner">
+                                <div class="box-header-nav menu-nocenter">
+                                    <ul id="Ul1"
+                                        class="clone-main-menu akasha-clone-mobile-menu akasha-nav main-menu">
+                                        <li id="Li1"
+                                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu">
+                                            <a class="akasha-menu-item-title" title="Home" href="index.aspx">Home</a>
+                                        </li>
+                                        <li id="Li2"
+                                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-228 parent parent-megamenu item-megamenu">
+                                            <a class="akasha-menu-item-title" title="About"
+                                                href="about.aspx">About</a>
+                                            <span class="toggle-submenu"></span>
+                                        </li>
+                                        <li id="Li3"
+                                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-229 parent parent-megamenu item-megamenu">
+                                            <a class="akasha-menu-item-title" title="Products" href="products.aspx">Products</a>
+                                        </li>
+
+                                        <li id="Li4"
+                                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-996 parent parent-megamenu item-megamenu">
+                                            <a class="akasha-menu-item-title" title="Blog"
+                                                href="blogs.aspx">Blog</a>
+                                        </li>
+                                        <li id="Li5"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-237 parent">
+                                            <a class="akasha-menu-item-title" title="Newsletter" href="newsletter.aspx">Newsletter</a>
+
+                                        </li>
+                                        <li id="Li6"
+                                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-229 parent parent-megamenu item-megamenu">
+                                            <a class="akasha-menu-item-title" title="Testimonials" href="testimonials.aspx">Testimonials</a>
+                                        </li>
+                                        <li id="Li7"
+                                            class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-229 parent parent-megamenu item-megamenu">
+                                            <a class="akasha-menu-item-title" title="Contact" href="contact.aspx">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="header-mobile-left">
+                    <div class="block-menu-bar">
+                        <a class="menu-bar menu-toggle" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    
+                    <ul class="wpml-menu">
+                        <li class="menu-item akasha-dropdown block-language">
+                            <a href="#" data-akasha="akasha-dropdown">
+                                <img src="assets/images/en.png"
+                                    alt="en" width="18" height="12">
+                                English
+                            </a>
+                            <span class="toggle-submenu"></span>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <img src="assets/images/it.png"
+                                            alt="it" width="18" height="12">
+                                        Italiano
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <div class="wcml-dropdown product wcml_currency_switcher">
+                                <ul>
+                                    <li class="wcml-cs-active-currency">
+                                        <a class="wcml-cs-item-toggle">USD</a>
+                                        <ul class="wcml-cs-submenu">
+                                            <li>
+                                                <a>EUR</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-mobile-mid">
+                    <div class="header-logo">
+                        <a href="index.aspx"><%=logoImage %></a>
+                    </div>
+                </div>
+                <div class="header-mobile-right">
+                    <div class="header-control-inner">
+                        <div class="meta-dreaming">
+                            <div class="menu-item block-user block-dreaming">
+                                <a class="block-link" href="newsletter.aspx">
+                                    <span class="flaticon-profile"></span>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <footer id="footer" class="footer style-04">
+            <div class="section-001 section-009" id="home-newsletter">
+                <div class="container">
+                    <div class="akasha-newsletter style-01">
+                        <div class="newsletter-inner">
+                            <div class="newsletter-info">
+                                <div class="newsletter-wrap">
+                                    <h3 class="title">Newsletter</h3>
+                                    <h4 class="subtitle">Consult With Sales Representative</h4>
+                                    <p class="desc">
+                                        FILL THE DETAILS BELOW TO CONNECT WITH US
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="newsletter-form-wrap">
+                                <div class="newsletter-form-inner">
+                                    <asp:TextBox ID="txtNewsletter" runat="server" class="email email-newsletter" placeholder="Enter your email ..." type="email"></asp:TextBox>
+                                    <asp:Button ID="btnNewsletter" OnClick="btnNewsletter_Click" runat="server" class="button btn-submit submit-newsletter" Text="Subscribe" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-025">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 d-lg-none">
+                            <div class="logo-footer">
+                                <img src="assets/images/logo.png"
+                                    class="az_single_image-img attachment-full" alt="img">
+                            </div>
+                            <div class="footer-desc">
+                                Ananya Fashion helps you sell anything.<br />
+                                The best choice for your next personal
+                            </div>
+                            <div class="akasha-socials style-01">
+                                <div class="content-socials">
+                                    <ul class="socials-list">
+                                        <li>
+                                            <a href="https://facebook.com/" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/" target="_blank">
+                                                <i class="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="akasha-listitem style-04">
+                                <div class="listitem-inner">
+                                    <h4 class="title">Ananya Fashion </h4>
+                                    <ul class="listitem-list">
+                                        
+                                        <li>
+                                            <a href="products.aspx" target="_self">See Products </a>
+                                        </li>
+                                        <li>
+                                            <a href="blogs.aspx" target="_self">Read Blogs </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.aspx" target=" _blank">Know Us </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.aspx" target="_self">Contact Us </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="logo-footer">
+                                <img src="assets/images/logo.png"
+                                    class="az_single_image-img attachment-full" alt="img">
+                            </div>
+                            <div class="footer-desc">
+                                Akasha helps you sell anything.<br />
+                                The best choice for your next personal
+                            </div>
+                            <div class="akasha-socials style-01">
+                                <div class="content-socials">
+                                    <ul class="socials-list">
+                                        <li>
+                                            <a href="https://facebook.com/" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/" target="_blank">
+                                                <i class="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="akasha-listitem style-04">
+                                <div class="listitem-inner">
+                                    <h4 class="title">Information </h4>
+                                    <ul class="listitem-list">
+                                        <li>
+                                            <a href="#" target="_self">Privacy Policy </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self">Customer Service </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self">Orders and Returns </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self">Contact </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-016">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>© Copyright <%= currentDateTime %> <a href="http://omsharma.pcbhilwara.com/">Ananya Fashion</a>. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="payment">
+                                <img src="assets/images/payment.png"
+                                    class="az_single_image-img attachment-full" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-device-mobile">
+            <div class="wapper">
+                <div class="footer-device-mobile-item device-home">
+                    <a href="index.aspx">
+                        <span class="icon">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                        Home
+                    </a>
+                </div>
+                
+                <div class="footer-device-mobile-item device-home device-cart">
+                    <a href="products.aspx">
+                        <span class="icon">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            <span class="count-icon">0
+                            </span>
+                        </span>
+                        <span class="text">Products</span>
+                    </a>
+                </div>
+                <div class="footer-device-mobile-item device-home device-user">
+                    <a href="contact.aspx">
+                        <span class="icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        Become a Retail Partner
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="backtotop active">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <div id="wappLink" class="wappLink">
+            <a class="wappLink-toggle" data-action="open" data-phone="<%=mobileNumber %>" data-message="I Saw On Ananya Fashion Website And Want To Know More About Shop For Trendy Women Ethnic Wear." role="button" tabindex="0" target="_blank" href="https://web.whatsapp.com/send?phone=<%=mobileNumber %>&amp;text=I Saw On Ananya Fashion Website And Want To Know More About Shop For Trendy Women Ethnic Wear.">
+                <i class="fa fa-whatsapp" style="color:white;" aria-hidden="true"></i>
+                <span class="wappLink-text">How can I help you?</span>
+            </a>
+        </div>
+        <script src="assets/js/jquery-1.12.4.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/chosen.min.js"></script>
+        <script src="assets/js/countdown.min.js"></script>
+        <script src="assets/js/jquery.scrollbar.min.js"></script>
+        <script src="assets/js/lightbox.min.js"></script>
+        <script src="assets/js/magnific-popup.min.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/jquery.zoom.min.js"></script>
+        <script src="assets/js/threesixty.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/mobilemenu.js"></script>
+        <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
+        <script src="assets/js/functions.js"></script>
+
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+
+                    <div class="modal-body text-center">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <img src="images/about%20image/model-model.jpeg" class="img-fluid" />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <h1>Become a Retail Partner </h1>
+                                <div role="form" class="wpcf7">
+                                    <div class="wpcf7-form">
+                                        <label>
+                                            <span class="wpcf7-form-control-wrap your-name">
+                                                <asp:TextBox ID="username" placeholder="Name*" runat="server" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"></asp:TextBox>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <span class="wpcf7-form-control-wrap your-email">
+                                                <asp:TextBox ID="useremail" placeholder="Email*" runat="server" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                    type="email"></asp:TextBox>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <span class="wpcf7-form-control-wrap your-email">
+                                                <asp:TextBox ID="usermobile" placeholder="Phone Number*" runat="server" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"></asp:TextBox>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <span class="wpcf7-form-control-wrap your-email">
+                                                <asp:TextBox ID="userventure" placeholder="Business Venture*" runat="server" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"></asp:TextBox>
+                                            </span>
+                                        </label>
+                                        <asp:Button ID="btnContact" OnClick="btnContact_Click" runat="server" class="wpcf7-form-control wpcf7-submit" type="submit" Text="Send" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#myModal').modal('show');
+            });
+        </script>
+    </form>
+</body>
+</html>
+    

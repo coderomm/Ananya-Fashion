@@ -1,0 +1,14 @@
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\bin\ananyafashion.dll.config
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\bin\ananyafashion.dll
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\bin\ananyafashion.pdb
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\obj\Debug\ananyafashion.csproj.AssemblyReference.cache
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\obj\Debug\ananyafashion.csproj.CoreCompileInputs.cache
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\obj\Debug\ananyafashion.dll
+E:\OneDrive\डेस्कटॉप\ananyafashion\ananyafashion\obj\Debug\ananyafashion.pdb
+D:\ASP.NET Websites\ananyafashion\ananyafashion\bin\ananyafashion.dll.config
+D:\ASP.NET Websites\ananyafashion\ananyafashion\bin\ananyafashion.dll
+D:\ASP.NET Websites\ananyafashion\ananyafashion\bin\ananyafashion.pdb
+D:\ASP.NET Websites\ananyafashion\ananyafashion\obj\Debug\ananyafashion.csproj.AssemblyReference.cache
+D:\ASP.NET Websites\ananyafashion\ananyafashion\obj\Debug\ananyafashion.csproj.CoreCompileInputs.cache
+D:\ASP.NET Websites\ananyafashion\ananyafashion\obj\Debug\ananyafashion.dll
+D:\ASP.NET Websites\ananyafashion\ananyafashion\obj\Debug\ananyafashion.pdb
