@@ -25,9 +25,9 @@ I'm CoderOm, the developer behind Ananya Fashion, your go-to platform for discov
 Here are the key technologies and tools I used to bring Ananya Fashion to life:
 
 - ASP.NET C#
-- Entity Framework
-- Visual Studio
-- MS SQL Server
+- Entity Framework 6
+- Visual Studio 2019
+- MS SQL Server 2014
 
 ## Getting Started
 
