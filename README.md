@@ -1,7 +1,5 @@
-﻿# Ananya Fashion - Women's Clothing and Ethnic Wear Shopping Portal
-
-Welcome to Ananya Fashion, your one-stop destination for women's clothing and ethnic wear shopping. Explore a wide range of products, get detailed information, inquire about products, and stay updated with the latest fashion trends through our blogs. 💃👗🛍️
-
+﻿# Ananya Fashion - Shopping Website
+ 
 ![Ananya Fashion Logo](https://ananyafashionjaipur.com/images/logo/AnanyaLogo.png)
 
 ## Table of Contents
